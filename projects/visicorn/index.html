@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="a portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <title>sk / visicorn</title>
+</head>
+
+<body class="container" style="padding-bottom: 3rem;">
+<nav>
+    <h5 class="column is-12 no-margin-top no-margin-bottom"><a href="../../index.html">MAIN</a> / <a
+            href="../index.html">PROJECTS</a> / Visicorn</h5>
+</nav>
+<div class="columns is-multiline">
+    <h1 class="column is-12 no-margin-top no-margin-bottom">Visicorn</h1>
+    <h2 class="column is-12 no-margin-top">InfoVis Group@UBC (2021)</h2>
+    <div class="column is-12" style="text-align: center;">
+        <img style="border: thin solid black;" id="header" width="75%" src="images/header.png"
+             aria-label="visicorn image"
+             alt="the main visicorn dashboard"/>
+    </div>
+</div>
+
+<div class="columns is-multiline bottombrd">
+    <div class="column is-8 no-padding">
+        <h3 class="column no-margin-top no-margin-bottom is-12">Summary</h3>
+        <div class="column is-12">
+            <p>
+                Visicorn is a visualization system for the <em>Unicorn Intrusion Detection System</em>. I re-built the
+                front end to utilize the combination of d3/react/redux in a more manageable way. The project
+                architecture was thoroughly analyzed and was re-organized to standardize component layouts, props, as
+                well as pulling repeated code into their own utilities where appropriate. I also designed and
+                implemented custom visualizations employing all the mentioned improvements.
+            </p>
+            <p>
+                I made sure to write/create documentation. This documentation was done in multiple ways:
+            </p>
+            - Code structure<br/>
+            - Project's folder structure<br/>
+            - Actual written documentation (comments, markdown files, detailed issue/feature tickets)<br/>
+            <p>
+                This should ensure that the next developer can continue work with less on-boarding time.
+            </p>
+        </div>
+        <h4 class="column is-12 no-margin-top no-margin-bottom">Role Summary</h4>
+        <div class="column is-12">
+            <p>
+                Front-end programmer, re-writing existing components, designing visualizations, design visualization
+                interaction, documentation
+            </p>
+        </div>
+    </div>
+
+    <div class="column is-4 no-padding">
+        <h3 class="column no-margin-top no-margin-bottom is-12">Links</h3>
+            <h5 class="column is-12 no-margin-top unavailable">Source is currently unavailable.</h5>
+
+        <h3 class="column no-margin-bottom is-12">Tools Used</h3>
+            <p class="column is-12">
+                D3.js, React.js, Redux, HTML/CSS, Pen/Paper
+            </p>
+    </div>
+</div>
+<div class="columns is-multiline bottombrd">
+    <h3 class="column is-12 no-margin-top no-margin-bottom">Interaction Examples</h3>
+    <p class="column is-12">
+        There is <em>a lot</em> going on with this project. Here are a few examples of interactions from some old pull
+        requests.
+    </p>
+    <div class="column is-5 no-padding">
+        <div class="column no-margin-top no-margin-bottom is-12">
+            <img style="border: thin solid black;" src="images/iss65_new_default.gif" width="100%">
+        </div>
+        <div class="column is-12">
+            <p class="no-margin-top">
+                The default state.
+            </p>
+        </div>
+    </div>
+    <div class="column is-4 no-padding">
+        <div class="column no-margin-top no-margin-bottom is-12">
+            <img style="border: thin solid black;" src="images/dynamicNbhdChart.gif" width="100%">
+        </div>
+        <div class="column is-12">
+            <p class="no-margin-top">
+                An example of the dynamic Neighborhood explorer view. We can go as many levels deep, as the threshold
+                depends on the pixel height of the bar.
+            </p>
+        </div>
+    </div>
+    <div class="column is-3 no-padding">
+        <div class="column no-margin-top no-margin-bottom is-12">
+            <img style="border: thin solid black;" src="images/upsetSort.gif" width="100%">
+        </div>
+        <div class="column is-12">
+            <p class="no-margin-top">
+                A demonstration of the vertical sort, that is, type sort.
+            </p>
+        </div>
+    </div>
+    <div class="column is-6 no-padding">
+        <div class="column no-margin-top no-margin-bottom is-12">
+            <img style="border: thin solid black;" src="images/nbhdToUpsetWhileSortingForUpsetSelection.gif"
+                 width="100%">
+        </div>
+        <div class="column is-12">
+            <p class="no-margin-top">
+                Here we can see we go from the (outdated) Neighborhood Explorer view to the Upset view while keeping our
+                sort options; it applies to both the active and inactive sets.
+            </p>
+        </div>
+    </div>
+    <div class="column is-6 no-padding">
+        <div class="column no-margin-top no-margin-bottom is-12">
+            <img style="border: thin solid black;" src="images/upsetTypeSelection.gif" width="100%">
+        </div>
+        <div class="column is-12">
+            <p class="no-margin-top">
+                This shows how we can select types (the long column), multiple types, sort them and still have our
+                selection kept.
+            </p>
+        </div>
+    </div>
+</div>
+<div class="columns is-multiline bottombrd">
+    <h3 class="column is-4 no-margin-top">Background, Context</h3>
+    <div class="column is-8">
+        <p class="no-margin-top">
+            Visicorn is a visualization system that aids in developing inferences about anomalies detected in the
+            <em>Unicorn Intrusion Detection System</em>. This project encodes a complicated set of graph data (a
+            provenance graph) into something human readable. Visicorn helps interested stake holders (in this case,
+            IT admins, security analysts) identify/perform root-cause analysis of system intrusions.
+        </p>
+        <p>
+            To learn more about Visicorn, visit <a href="https://systopia.cs.ubc.ca/visicorn">https://systopia.cs.ubc.ca/visicorn</a>.
+        </p>
+    </div>
+</div>
+</body>
+</html>

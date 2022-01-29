@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="a portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <title>sk / f1 car changes</title>
+</head>
+
+<body class="container" style="padding-bottom: 3rem;">
+<nav>
+    <h5 class="column is-12 no-margin-top no-margin-bottom"><a href="../../index.html">MAIN</a> / <a
+            href="../index.html">PROJECTS</a> / F1 Car Changes</h5>
+</nav>
+<div class="columns is-multiline">
+    <h1 class="column is-12 no-margin-top no-margin-bottom">F1 Car Changes Data Viz</h1>
+    <h2 class="column is-12 no-margin-top">CPSC 436V (2021)</h2>
+    <div class="column is-12" style="text-align: center;">
+        <video autoplay loop muted id="header" width="100%" src="webm/header.webm"
+               aria-label="f1 car changes video"
+               alt="The various pages of the f1 car changes visualization project"></video>
+    </div>
+
+    <div tabindex="0" class="column is-8 no-padding">
+        <h3 class="column no-margin-top no-margin-bottom is-12">Summary</h3>
+        <p class="column no-margin-top is-12">
+            This project explores Formula1 car improvements from 2000-2020.
+            My team and I look at the improvement (or worsening) of cars over the years through
+            power-to-weight and lap times — this is done through interactive charts which visualizes
+            the change. The project is styled using F1's branding guide.
+            We implemented an interesting view: an animated head to head lap based on sector
+            times for 2014 and 2019.
+            <br/><br/>
+            We also got in the CPSC 436V hall of fame for this project!
+        </p>
+
+        <div class="columns no-padding">
+            <div tabindex="0" id="team" class="column is-3">
+                <h3 class="no-margin-bottom">Team</h3>
+                <ul class="no-margin-top">
+                    <li>Shabab Khan</li>
+                    <li>Lydia Zheng</li>
+                    <li>Robert Mo</li>
+                </ul>
+            </div>
+            <div tabindex="0" id="role" class="column is-9">
+                <h3 class="column is-12 no-margin-bottom">My Role</h3>
+                <p class="column is-12">
+                    Beyond ideating the initial project and the visualizations, I was also the front end designer,
+                    lead programmer, documenter, and helped with data ingest and processing.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="column is-4 no-padding">
+        <h3 class="column is-12 no-margin-top no-margin-bottom">Links</h3>
+        <h5 class="column is-12 no-margin-top no-margin-bottom">
+            <a href="https://0x73006b.github.io/A-Data-Driven-Visualization-of-F1-Car-Changes-over-2000-2020"
+               target="_blank">
+                view project</a>
+            |
+            <a href="https://github.com/0x73006b/A-Data-Driven-Visualization-of-F1-Car-Changes-over-2000-2020"
+               target="blank">
+                source</a>
+        </h5>
+        <div tabindex="0" id="tools" class="column is-12">
+            <h3 class="no-margin-bottom">Tools Used</h3>
+            <ul class="no-margin-top">
+                <li>D3.js</li>
+                <li>HTML/CSS</li>
+                <li>MongoDB</li>
+                <li>Python</li>
+                <li>Google Sheets</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="columns is-multiline">
+    <div id="brief-summary" class="columns is-multiline topbrd bottombrd">
+        <h3 tabindex="0" class="column is-12 no-margin-top no-margin-bottom" style="padding-top: 1rem">Brief
+            Explanation</h3>
+        <div class="column is-12">
+            <p class="no-margin-top">
+                Please note that the brief explanation here skips over finer details, but provides general decision
+                making,
+                and
+                experience. The report is <strong>loooong</strong> but informative!
+                You can find the full report in
+                <a href="report.pdf" target="_blank">PDF</a>
+                /
+                <a href="report.html" target="_blank">HTML</a>
+                format by clicking on the respective format types.
+            </p>
+        </div>
+    </div>
+
+    <div id="viz-interaction" class="columns is-multiline bottombrd">
+        <h3 tabindex="0" class="column is-12 no-margin-top no-margin-bottom">Visualization Interaction</h3>
+        <div class="column is-12">
+            <p>
+                This section will mostly be animations and short captions. Each sub-section is listed as <em>Name
+                (ABBR)</em>. The detailed text is in the report.
+            </p>
+            <div class="columns is-multiline">
+                <h5 class="column is-12 no-padding">Mechanical Changes (MC)</h5>
+                <p class="column is-12 no-padding">
+                    This visualization displays all possible years, a set of cars, and information for one car. <br/>
+                    The key interactions are in the upper line chart to scatter plot to lower line chart interaction,
+                    and the tool tip that appears on hover.
+                </p>
+                <div class="column is-6 video-div">
+                    <video controls loop muted src="webm/mc0.webm" type="video/webm">
+                    </video>
+                    <br/>
+                    <small>
+                        Fig. 1. Tool tip and filtering selection on line chart.
+                    </small>
+                </div>
+                <div class="column is-6 video-div">
+                    <video controls loop muted src="webm/mc1.webm" type="video/webm">
+                    </video>
+                    <br/>
+                    <small>
+                        Fig. 2. Tool tip and 2 selections on scatterplot, tool tip on small multiple line charts.
+                    </small>
+                </div>
+
+                <h5 class="column is-12 no-padding">Lap Time Progression (LT0 + LT1)</h5>
+                <p class="column is-12 no-padding">
+                    This visualization displays "theoretical lap time progression" a metric we created that indicates
+                    changes in car performance, the tracks ran from 2000-2020 and the average times. <br/>
+                    The key interactions are in the upper line chart to lower small multiple line chart interaction,
+                    and the tool tip that appears on hover.
+                </p>
+                <div class="column is-6 video-div">
+                    <video controls loop muted src="webm/lt0_lt1_0.webm" type="video/webm">
+                    </video>
+                    <br/>
+                    <small>
+                        Fig. 3. Tool tips on overview (LT0).
+                    </small>
+                </div>
+                <div class="column is-6 video-div">
+                    <video controls loop muted src="webm/lt0_lt1_1.webm" type="video/webm">
+                    </video>
+                    <br/>
+                    <small>
+                        Fig. 4. Selection on overview (LT0), tool tips and de-selection on small
+                        multiples (LT1). Shows the bi-directional relationship between overview
+                        (LT0) and small multiples (LT1).
+                    </small>
+                </div>
+                <div class="column is-6 video-div">
+                    <video controls loop muted src="webm/lt0_lt1_2.webm" type="video/webm">
+                    </video>
+                    <br/>
+                    <small>
+                        Fig. 5. Selection and de-selection on small multiples (LT1). Shows the bi-directional
+                        relationship between overview (LT0) and small multiples (LT1).
+                    </small>
+                </div>
+                <div class="column is-6 video-div">
+                    <video controls loop muted src="webm/lt0_lt1_3.webm" type="video/webm">
+                    </video>
+                    <br/>
+                    <small>
+                        Fig. 6. Disable/enable points on small multiples (LT1). This lets the viewer
+                        get a feel for the general trend.
+                    </small>
+                </div>
+                <div class="column is-6 video-div">
+                    <video controls loop muted src="webm/lt0_lt1_4.webm" type="video/webm">
+                    </video>
+                    <br/>
+                    <small>
+                        Fig. 7. Clear Selection to remove anything already (pre-)selected, and reset
+                        button to go back to initial load state.
+                    </small>
+                </div>
+
+                <h5 class="column is-12 no-padding">Lap Time Visual Comparison Tool (LT2)</h5>
+                <div class="column is-6 video-div">
+                    <video controls loop muted src="webm/lt2_0.webm" type="video/webm">
+                    </video>
+                    <br/>
+                    <small>
+                        Fig. 8. Tool tips on stacked bar chart. This shows the different sector times
+                        for the different years.
+                    </small>
+                </div>
+                <div class="column is-6 video-div">
+                    <video controls loop muted src="webm/lt2_1.webm" type="video/webm">
+                    </video>
+                    <br/>
+                    <small>
+                        Fig. 9. Radio buttons to change the track selection.
+                    </small>
+                </div>
+                <div class="column is-6 video-div">
+                    <video controls loop muted src="webm/lt2_2.webm" type="video/webm">
+                    </video>
+                    <br/>
+                    <small>
+                        Fig. 10. Starting the race! A quick glimpse at how the actual race function of
+                        this visualization works.
+                        <a href="https://0x73006b.github.io/A-Data-Driven-Visualization-of-F1-Car-Changes-over-2000-2020/#step3"
+                           target="_blank">
+                            Check it out here!
+                        </a>
+                    </small>
+                </div>
+            </div>
+            <p></p>
+        </div>
+    </div>
+
+    <div tabindex="0" id="viz-goals-tasks" class="columns is-multiline bottombrd">
+        <h3 class="column is-12 no-margin-top no-margin-bottom">Viz Goals, Tasks</h3>
+        <div class="column is-12 no-margin-top no-padding-top">
+            Each visualization had a different goal and task.
+        </div>
+        <div class="columns">
+            <div tabindex="0" class="column is-4">
+                <h5 class="no-margin-bottom">1. Power and Weight</h5>
+                <h6> (aka Mechanical Changes) </h6>
+                <p>
+                <ul>
+                    <li>
+                        <strong>Overview:</strong> This view could show us some interesting
+                        and unexpected trends in the power:weight ratio over seasons. The
+                        reasons, of course, could be various, and thus this would provide
+                        a starting point of investigation.
+                    </li>
+                    <li>
+                        <strong>Filtered scatterplot/sub-overview:</strong> the viewer may
+                        want to see how the cars cluster up in terms of power:weight.
+                    </li>
+                    <li>
+                        <strong>Detail view:</strong> here, we look at progress over time
+                        and get a feel for constructor progress in building a car. Both
+                        the power and power:weight charts will show a constructor's
+                        progress through the years.
+                    </li>
+                </ul>
+                </p>
+            </div>
+
+            <div tabindex="0" class="column is-4">
+                <h5 class="no-margin-bottom">2. Lap Time Progression</h5>
+                <h6> (aka LT0 + LT1) </h6>
+                <p>
+                <ul>
+                    <li>
+                        <strong>Overview:</strong> With this, we can identify trends
+                        in <em>averaged</em> fastest lap times over years/seasons. We get
+                        a gauge for overall car performance that way. LT0 also allows us
+                        to look up the fastest overall seasons through theoretical lap times
+                        (the calculation can be found in the long form report).
+                    </li>
+                    <li>
+                        <strong>Small multiples:</strong> We can find the best/worst times,
+                        view by year(s), we can compare lap time trends per circuit through
+                        the trend line. This visualization provides a leeway for people
+                        to browse lap time data and see which tracks were run in which seasons.
+                    </li>
+                </ul>
+                </p>
+            </div>
+            <div tabindex="0" class="column is-4">
+                <h5 class="no-margin-bottom">3. Lap Time Visual Comparison Tool</h5>
+                <h6> (aka LT2) </h6>
+                <li>
+                    <strong>Stacked bar chart:</strong> This presents the part-to-whole
+                    relationship of sector times to lap times (i.e. the sum of sector times
+                    becomes the lap time).
+                </li>
+                <li>
+                    <strong>Animation:</strong> Provides a cool way to visualize
+                    differences in sector times/lap times.
+                </li>
+                <li>
+                    Being pretty cool to look at.
+                </li>
+            </div>
+        </div>
+    </div>
+    <div class="columns bottombrd">
+        <div tabindex="0" id="data-descript" class="column is-5 no-padding">
+            <h3 class="column is-12 no-margin-top no-margin-bottom">Description of Data</h3>
+            <div class="column is-12">
+                <p class="no-margin-top">
+                    We used 3 data sets for the project.
+                </p>
+                <ol>
+                    <li>
+                        <a href="https://www.kaggle.com/rohanrao/formula-1-world-championship-1950-2020"
+                           target="_blank">
+                            Formula 1 World Championship (1950 - 2020).</a>
+                        Missing entries were collected by Lydia from the F1 Wikipedia pages.
+                    </li>
+                    <li>
+                        F1 Cars (2000 - 2020): This was collected by me from Wikipedia, f1technical, etc.
+                    </li>
+                    <li>
+                        F1 Sector Times:
+                        <ul>
+                            <li>
+                                <a href="https://www.kaggle.com/markjenei/f1-qualification-best-sector-times-20182019"
+                                   target="_blank">F1 Qualification Best Sector Times 2018 2019</a>
+
+                            </li>
+                            <li>
+                                <a href="https://www.fia.com/events/fia-formula-one-world-championship/season-2014">
+                                    2014 F1 Season on FIA.com
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ol>
+                <p>
+                    Each data set was filtered before being run through the preprocessing stage.
+                    To view the rationale behind our choices in the attributes we kept, as well as
+                    their types, cardinalities, meanings, etc., please see the full report
+                    (<a href="report.pdf" target="_blank">pdf</a>
+                    /
+                    <a href="report.html" target="_blank">html</a>).
+                </p>
+            </div>
+        </div>
+
+        <div id="data-preprocess" class="column is-7 no-padding">
+            <h3 class="column is-12 no-margin-top no-margin-bottom">Data Preprocessing</h3>
+            <div class="column is-12">
+                <p class="no-margin-top">
+                    Each data set had some form of preprocessing.
+                </p>
+                <p>
+                    We started by putting our first data set (the F1 World
+                    Championship set) into a MongoDB instance and found it was an immense number. We filtered it down
+                    to seasons from 2000 to 2020 and then threw it into a python script that Lydia and I wrote.
+                    This python script computed average lap times. We noticed that there was some race data missing
+                    between 2000-2003, and so we had to manually fill in that data on a Google docs Sheet
+                    (and then re-run our script).
+                </p>
+
+                <p>
+                    The F1 car list data set was pre-processed entirely in python that I wrote. It was a scraper that
+                    would pull data from a (thankfully) standardized table that each car entry had on Wikipedia. Some
+                    data was missing due to the proprietary nature of almost everything in F1, and for that, we tried
+                    our best to fill it in reasonably (through searching the internet or using estimated numbers).
+                </p>
+
+                <p>
+                    We initially collected data from Kaggle for this, and then we filtered the data so only the tracks
+                    we supported (i.e. used between 2000-2020) are left. Furthermore, the data is combined/merged so
+                    that a JSON object has all 3 sectors we need for a given track/year. We manually updated the JSON
+                    output to include 2014 data from the FIA website; the reason for this is that we could better
+                    illustrate the difference (mostly the improvement) of the cars when comparing 2014 and 2019.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="reflections" class="columns is-multiline bottombrd">
+        <h3 class="column is-12 no-margin-top no-margin-bottom">Reflections</h3>
+        <div class="column is-12">
+            <p class="no-margin-top">
+                During this project, I learned <em>a lot</em> about project management, development,
+                setting and re-defining goals as necessary.
+            </p>
+
+            <h4 class="no-margin-bottom">Evolving Viz/Technical Goals</h4>
+            <p>
+                Every visualization went through some level of changes, some more significant.
+            </p>
+
+            <h5>Changes to Mechanical Changes Viz</h5>
+            <p>
+                We expanded this visualization with one more chart. In its original form, this
+                chart was simply a scatterplot of the cars and 2 line charts. The final version
+                has the same overall parts in that it has a scatterplot and line charts, but
+                they now interact in a way such that one of the line charts (power:weight) acts
+                as a filter for the scatterplot (and the vehicles it displays).
+            </p>
+            <p>
+                There is also a jitter on the scatter plot. This helped remove some of the
+                occlusion of data in the overview of the scatterplot. It <em>does</em> make
+                the data a little less accurate, but being able to see the actual points was
+                decided to be more important, and the actual numbers are available in the tooltip.
+            </p>
+
+            <h5>Changes to LT1 Viz</h5>
+            <div class="columns">
+                <p class="column is-6 no-padding">
+                    In terms of viz design, this was changed from a stacked scatter plot to a small
+                    multiples visualization. This change allowed us to remove large amounts of occlusion,
+                    create a clean aesthetic look, and visualize missing data in an interesting way.
+                </p>
+                <div class="column is-6 no-padding">
+                    <br/>
+                    <img src="images/image34.png">
+                    <a href="#image3">
+                        <img width="50%" src="images/image3.png">
+                    </a>
+
+                    <div id="image3" class="modalWindow">
+                <span class="exit-span">
+                    <img src="images/image3.png">
+                    <br/>
+                    <a href="#close">close</a>
+                </span>
+                    </div>
+                </div>
+            </div>
+
+            <h5>Changes to LT2 Viz</h5>
+            <p>
+                We were originally going to do a standard barchart but we decided to do a stacked
+                barchart to visualize the sector times better; it represents the part-to-whole
+                relation better.
+            </p>
+
+            <h4 class="no-margin-bottom">For Next Time</h4>
+            <p>
+                Overall, I'm happy with the project. However, the amount of time we spent filling
+                out data... it was... inordinate. So having a well sorted data set would be the
+                main thing to address for the next personal viz project.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="column is-12 bottombrd">
+    <p>
+        Just to repeat the message above: The brief explanation below skips over finer details, but provides general
+        decision making, and experience. The report is <strong>loooong</strong> but informative! Check it out in
+        <a href="report.pdf" target="_blank">PDF</a>
+        /
+        <a href="report.html" target="_blank"> HTML</a>.
+    </p>
+</div>
+
+</body>
+
+</html>

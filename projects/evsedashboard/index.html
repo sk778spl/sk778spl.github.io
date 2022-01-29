@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="a portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <title>sk / evsedashboard</title>
+</head>
+
+<body class="container" style="padding-bottom: 3rem;">
+<nav>
+    <h5 class="column is-12 no-margin-top no-margin-bottom"><a href="../../index.html">MAIN</a> / <a
+            href="../index.html">PROJECTS</a> / EVSE Dashboard</h5>
+</nav>
+<div class="columns is-multiline">
+    <h1 class="column is-12 no-margin-top no-margin-bottom">EVSE Dashboard</h1>
+    <h2 class="column is-12 no-margin-top">MeridaLabs (2019)</h2>
+    <div class="column is-12" style="text-align: center;">
+        <a href="#header">
+            <img src="images/header.png" aria-label="evse dashboard image" style="width: 50vmax"
+                 alt="An example image of the EVSE Dashboard">
+        </a>
+
+        <div id="header" class="modalWindow">
+                <span class="exit-span">
+                    <a href="#close">
+                        <img src="images/header.png" style="width: 75vmax">
+                    </a>
+                    <br/>
+                    <a href="#close">close</a>
+                </span>
+        </div>
+    </div>
+    <div class="column no-margin-top is-8 no-padding">
+        <div class="columns is-multiline">
+            <h3 class="column no-margin-bottom is-12">Summary</h3>
+            <p class="column no-margin-top is-12">
+                The EVSE Dashboard is an operational dashboard built to provide pertinent,
+                important data that will allow parking garage managers to make more
+                efficient decisions regarding their electric vehicle charging stations.
+            </p>
+        </div>
+    </div>
+    <h5 class="column no-margin-top is-4 no-padding">
+        <div class="columns is-multiline">
+            <h3 class="column is-12 no-margin-bottom">Links</h3>
+            <h5 class="column is-12 no-margin-top unavailable">Source is currently unavailable.</h5>
+        </div>
+    </h5>
+
+    <div id="role" class="column is-8">
+        <h3 class="no-margin-bottom">My Role</h3>
+        <p class="no-margin-top">
+            I worked as the main developer/designer for the project.
+        </p>
+        <ul>
+            <li>Full stack programmer</li>
+            <li>Created detailed, easy to maintain documentation.</li>
+            <li>User research</li>
+            <li>Product research</li>
+            <li>Low fidelity to high fidelity prototyping</li>
+        </ul>
+    </div>
+
+    <div id="tools" class="column is-4 is-vnormal">
+        <h3 class="no-margin-bottom">Tools Used</h3>
+        <ul class="no-margin-top">
+            <li>React/Redux</li>
+            <li>NodeJS</li>
+            <li>Socket.io</li>
+            <li>MySQL</li>
+            <li>Sphinx</li>
+            <li>Bitbucket, JIRA</li>
+        </ul>
+    </div>
+
+    <h2 class="column is-12 bottombrd no-margin-bottom">Long Form Explanation</h2>
+    <div id="background-context" class="columns bottombrd" style="margin-top: 0;">
+        <h3 class="column is-4 no-margin-top">Background, Context</h3>
+        <p class="column is-8 no-margin-top">
+            With more and more electric vehicles (EVs) being bought, and more parkades (Canadian for parking
+            garage/lot) installing electric vehicle supply equipment (EVSE), otherwise known as EV charging
+            stations, there is a need for parkade management to see the goings-on of the EV charging stations — an
+            operational dashboard that would allow them to see how much energy they're using, how many
+            chargers are being used at a given time, the amount of money they're making, and more.
+        </p>
+    </div>
+
+    <div id="user-research" class="columns bottombrd">
+        <h3 class="column is-4 no-margin-top">User Research</h3>
+        <p class="column is-8 no-margin-top">
+            Our main target demographic was parkade managers and admin staff. We had a line on one parkade manager,
+            but with limited access to them. We did an informal, unstructured interview with a university parking
+            manager and got a list of wants, needs, and pain points of the products he used.
+        </p>
+    </div>
+
+    <div id="stakeholders" class="columns bottombrd">
+        <h3 class="column is-4 no-margin-top">Primary Stakeholders</h3>
+        <p class="column is-8 no-margin-top">
+            Parkade Managers and Parkade Operational Staff who will be monitoring
+            EV station usage levels are the primary stakeholders.
+        </p>
+    </div>
+
+    <div id="product-research" class="columns bottombrd">
+        <h3 class="column is-4 no-margin-top">Product Research</h3>
+        <p class="column is-8 no-margin-top">
+            To get a better understanding of the current product landscape, I took a look at competitor products
+            and took note of what could be improved upon. The main takeaway was that there were improvements to
+            be had in the level of complexity, and how quickly information could be accessed.
+        </p>
+    </div>
+
+    <div id="creating-requirements" class="columns bottombrd" style="padding-bottom: 1vh">
+        <h3 class="column is-4 no-margin-top">Creating Requirements</h3>
+        <p class="column is-8 no-margin-top">
+            After doing some user research and product research, and understanding our constraints
+            (i.e., what data was available to us), we created a list of requirements.
+            Beyond the required default charts to display, we had some basic usability requirements.
+            People needed to be able to view relevant data in a quickly and easily digestible manner.
+            The default layout should be in an order where more consistently updated information is
+            put in a position where it'd be viewed first.
+        </p>
+    </div>
+    <div id="prototype-development" class="columns bottombrd">
+        <h3 class="column is-4 no-margin-top">Developing the Working Prototype</h3>
+        <div class="column is-8">
+            <p class="no-margin-top">
+                <img class="float-left" src="images/systemDiagram.png" aria-label="system diagram"
+                     alt="system diagram that shows the interaction between client, server and the database"
+                     style="margin-bottom: 1.5rem;">
+            <p>
+                To develop a working prototype meant that I needed to design the front and back end systems. The
+                front end was created using React and Redux, with Material UI and Recharts to speed up the visuals.
+                Many custom components were required to be made, but having a foundation sped the process up
+                considerably.
+            </p>
+            <p>
+                The back end was created using Node/Express as the main backbone. I wrote many SQL queries to
+                interact with the database Socket.io was used to connect the two and implement real-time updating.
+            </p>
+            <p>
+                As with many modern software projects, we took an agile approach to the project. My coworker (who
+                was working on another project) and I instituted a Bitbucket and JIRA combination for a
+                significantly better issue/task tracking and workflow experience. Implementation for the most part
+                was straightforward on the client-side.
+
+            </p>
+            </p>
+        </div>
+    </div>
+    <div id="architecture" class="columns bottombrd">
+        <h3 class="column is-4 no-margin-top">Project Architecture</h3>
+        <div class="column is-8">
+            <p class="no-margin-top">
+                Documentation and project structure can often be overlooked in keeping a project maintainable. I
+                carefully designed the project to have an understandable structure—with a balance of nesting folders
+                and ease
+                of access.
+            </p>
+            <p>
+                On the front end, components, utilities, and the store were put into appropriate folders.
+                This was also done on the back end. Code was written and designed to be easily accessible and
+                legible.
+
+            </p>
+        </div>
+    </div>
+
+    <div id="documentation" class="columns bottombrd">
+        <h3 class="column is-4 no-margin-top">Documentation</h3>
+        <div class="column is-8">
+            <p class="no-margin-top">
+                I spent quite a bit of time documenting the project in a detailed manner.
+            </p>
+            <p>
+                I documented how to use the custom components that I created, what the various functions do, and the
+                general structure of the project. Where applicable, I added accompanying diagrams — e.g a diagram
+                explaining the component split between the navigation area, and the 'chart area'. I also explained
+                the conceptual aspects of the project and included my thought processes for certain decisions, as
+                well as the design patterns I used.
+            </p>
+            <p>
+                Accompanying documentation was created for the database side of the project, in which I explained
+                the pertinent concepts, tables, keys, and issues of the (very large) database. I also documented the
+                SQL queries that I wrote, explaining what each procedure does, how code blocks work and areas where
+                I feel there could be some improvement in the future.
+
+            </p>
+        </div>
+    </div>
+    <div id="challenges" class="columns is-multiline bottombrd">
+        <h3 class="column is-4 no-margin-top no-margin-bottom">Challenges</h3>
+        <p class="column is-8 no-margin-top no-margin-bottom">
+            Every project comes with some form of challenge. The EVSE Dashboard was no different.
+        </p>
+        <h4 class="column is-4 no-margin-top no-margin-bottom">1. An Undocumented Database</h4>
+        <div class="column is-8 no-margin-bottom">
+            <p class="no-margin-top">
+                An undocumented database was the main source of issues. With a lack of documentation and a complex
+                design,
+                work on the project would have stagnated and many of the required features would not have been
+                possible.
+            </p>
+            <p>
+                However a combination of reading the documentation, carefully analyzing the different fields and
+                looking for patterns, communicating with my manager and the company managing the database,
+                I ended up being able to:
+            <ol style="margin-left: 1vw;">
+                <li>Create custom SQL queries for the project.</li>
+                <li>Create documentation for the relevant parts of the database.</li>
+            </ol>
+            </p>
+        </div>
+        <h4 class="column is-4 no-margin-top no-margin-bottom">2. User Permissions</h4>
+        <p class="column is-8 no-margin-top">
+            There were also access issues—our user accounts were not given full access to the database. This created
+            issues for some of the real-time updating plans we initially set out to have. However, real-time
+            updating was one of the main features of this project and so I figured out a way around this access
+            issue and implemented it.
+        </p>
+    </div>
+    <div id="learning" class="columns bottombrd">
+        <h3 class="column is-4 no-margin-top">Learning New Technologies</h3>
+        <p class="column is-8 no-margin-top">
+            Learning a new technology can be challenging, but also rewarding. During this project, I learned how to
+            use web sockets, and I learned the associated design patterns with web sockets.
+        </p>
+    </div>
+</div>
+</div>
+</body>
+
+</html>

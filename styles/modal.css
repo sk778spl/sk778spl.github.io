@@ -1,0 +1,30 @@
+/* modified from https://tutorialspage.com/create-modal-window-pure-html5-css3/ */
+.modalWindow {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    opacity:0;
+    pointer-events: none;
+    text-align:center;
+    display: flex;
+    flex-flow: column;
+    background: rgba(0,0,0, 0.85);
+    justify-content: center;
+    color: white !important;
+}
+
+.exit-span>a, .exit-span>a:hover {
+    color: white !important;
+}
+
+.modalWindow:target {
+    opacity:1;
+    pointer-events: auto;
+}
+.modalWindow > div {
+    position: relative;
+    /* margin: 10% auto; */
+}

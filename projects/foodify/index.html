@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="a portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <title>sk / foodify</title>
+</head>
+
+<body class="container" style="padding-bottom: 3rem;">
+<nav>
+    <h5 class="column is-12 no-margin-top no-margin-bottom"><a href="../../index.html">MAIN</a> / <a
+            href="../index.html">PROJECTS</a> / Foodify
+    </h5>
+</nav>
+<div class="columns is-multiline">
+    <h1 class="column is-12 no-margin-top no-margin-bottom">Foodify</h1>
+    <h2 class="column is-12 no-margin-top">CS344 (2019)</h2>
+</div>
+
+<div id="video" class="columns is-multiline">
+    <div class="column is-8">
+        <iframe class="r-iframe" style="width: 100%; height: 25vmax"
+                src="https://www.youtube-nocookie.com/embed/w7LwY6lTowE" title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        <br/>
+        Walkthrough video of final project.
+        <a href="https://www.youtube.com/watch?v=w7LwY6lTowE">https://www.youtube.com/watch?v=w7LwY6lTowE</a>
+    </div>
+
+    <div class="column is-4 no-padding" id="summary">
+        <div class="columns is-multiline no-padding">
+            <h3 class="column is-12 no-margin-bottom no-margin-top">Summary</h3>
+            <p class="column is-12 no-margin-top">
+                Foodify is a case study performed to learn a systematic approach to interface design. We implemented
+                task analysis, and various analytic and empirical evaluation methods in an exploration of a
+                food/grocery
+                purchasing app interface.
+            </p>
+
+            <h3 class="column is-12 no-margin-bottom">Links</h3>
+            <h5 class="column is-12 no-margin-top">
+                <a href="https://www.figma.com/proto/HjW3WtLXTDvpdIDMpJxYud/Untitled?node-id=139%3A695&scaling=scale-down&page-id=0%3A1&starting-point-node-id=139%3A695">view</a>
+                |
+                <a href="https://www.figma.com/file/HjW3WtLXTDvpdIDMpJxYud/Untitled?node-id=0%3A1">source</a>
+            </h5>
+        </div>
+    </div>
+</div>
+
+<div class="columns is-multiline">
+    <div class="column is-4" id="roles">
+        <h3 class="no-margin-bottom">My Role</h3>
+        <p>
+            User Research, Prototyping, Graphics
+        </p>
+    </div>
+    <div class="column is-4" id="tools">
+        <h3 class="no-margin-bottom">Tools Used</h3>
+        <p>
+            Crafting supplies, Illustrator, Figma
+        </p>
+    </div>
+    <div class="column is-4" id="team">
+        <h3 class="no-margin-bottom">The Team</h3>
+        <p>
+            Shabab Khan, Rithikha Rajamohan, Simeon Stakic, Grace Chang, Margaret Yao
+        </p>
+    </div>
+</div>
+
+<div id="long-form-content" class="columns is-multiline">
+    <h2 id="long-form-header" class="column is-12 bottombrd no-margin-bottom">Brief(-ish) Explanation</h2>
+    <div id="background" class="columns bottombrd">
+        <div class="column is-6">
+            <h3 style="margin-top: 0.75rem" class="no-margin-bottom">Background</h3>
+            <p>
+                We chose to explore a food/grocery purchasing app interface. This interface would allow a user to
+                create a grocery list based on recipes or menus provided from a limited number of sources
+                (e.g., spreadsheet, popular recipe sites, a built-in database) and then purchase items from said
+                list.
+            </p>
+        </div>
+        <div class="column is-6">
+            <h3 style="margin-top: 0.75rem" class="no-margin-bottom">Project Goals</h3>
+            <p>
+                This was a design exercise, so our goals were to make a well researched, well thought out interface.
+            </p>
+        </div>
+    </div>
+
+    <div class="columns is-multiline bottombrd" id="research">
+        <h3 class="column is-12 no-margin-top no-margin-bottom">Methodology</h3>
+        <div class="column is-12">
+            <p>
+                We created personas of potential users of the app.
+            </p>
+            <p>
+                We performed our initial user research through controlled observations and interviews. We created a
+                coding sheet and this enabled us to quickly affinity diagram and plan/analyze our findings as a
+                group.
+            </p>
+            <p>
+                We made low-fidelity prototypes, with which we did some task walkthroughs to get a gauge of issues with
+                user
+                flow. We then made a high-fidelity prototype, we recruited participants to go through it and we then
+                interviewed them about their thoughts.
+            </p>
+        </div>
+    </div>
+
+    <div class="columns is-multiline bottombrd" id="requirements">
+        <h3 class="column is-4 no-margin-top">Requirements</h3>
+        <ol class="column is-8">
+            <li>
+                <strong>
+                    Users can turn any inputted recipe into an ingredients list.
+                </strong>
+                <br/>
+                Though this is a black box, being able to convert a recipe found online or from a recipe database to
+                an ingredients list is the first step in creating a final grocery list.
+            </li>
+            <br/>
+            <li>
+
+                <strong>
+                    Users can easily cross check ingredients they already have at home and ingredients they need to buy.
+                </strong>
+                <br/>
+                Instead of the user doing calculations themselves on the grocery list to figure out the items they
+                need to buy, this gives users a grocery list based on their logistical needs.
+            </li>
+            <br/>
+            <li>
+                <strong>
+                    Users can find different brands and/or substitutes for ingredients and add it to their list.
+                </strong>
+                <br/>
+                For example: if a user doesn’t want to use tomatoes in their recipe they can substitute in red bell
+                peppers.<br/>
+                This gives users a more personalized experience and allows for additional customization and
+                flexibility.
+            </li>
+            <br/>
+            <li>
+                <strong>
+                    Users are alerted of products with common food allergens.
+                </strong>
+                <br/>
+                By taking into consideration the food allergies listed on the user’s profile, users can save time by
+                not
+                having to personally check the recipes for potential food allergens. This requirement allows for
+                efficiency
+                in the shopping process, as well as ensures users’ safety.
+            </li>
+        </ol>
+    </div>
+
+    <div class="columns is-multiline bottombrd" id="personas">
+        <h3 class="column is-12 no-margin-top no-margin-bottom">Personas</h3>
+        <p class="column is-12">
+            For our initial paper prototyping, we created 2 personas that would inform our cognitive
+            walkthroughs. Each persona would be used for task analysis.
+        </p>
+
+        <!-- <div style="flex-flow: row; display: flex; justify-content: space-between;"> -->
+        <div class="column is-vnormal no-padding-top is-6" id="persona-1">
+            <h4 class="no-margin-bottom">Persona 1 / Task Example 1</h4>
+            <h5 class="no-margin-bottom" style="padding-top: 0.25rem; margin-top: 0.75rem">Sam:</h5>
+            <ul class="no-margin-top">
+                <li>College student</li>
+                <li>Kind of broke</li>
+                <li>Learning how to cook using YouTube</li>
+                <li>Lactose intolerant</li>
+                <li>Wants easy substitutions (due to lactose intolerance)</li>
+            </ul>
+            <p>
+                Sam is a lactose intolerant college student trying to learn how to cook. Recently, he’s been
+                finding recipes by watching YouTube videos. Sometimes he finds it too tedious to pause and
+                rewind the video each time he misses an ingredient or a step. He wants something that translates
+                a video into a recipe, which will provide him with the list of ingredients needed for the dish.
+                He
+                then
+                checks what ingredients he has at home and tries to cross-check it with the recipe in order to
+                produce
+                a grocery list.
+            </p>
+            <p>
+                Additionally, because he is saving money, Sam wants to compare prices between brands of the same
+                product and put the cheaper option on his grocery list. Sam also wants to easily find a
+                substitution if the recipe calls for a dairy product, and add that substitution to his grocery
+                list instead.
+            </p>
+        </div>
+
+        <div class="column is-vnormal no-padding-top is-6" id="persona-2">
+            <h4 class="no-margin-bottom">Persona 2 / Task Example 2</h4>
+            <h5 class="no-margin-bottom" style="padding-top: 0.25rem; margin-top: 0.75rem">Martha:</h5>
+            <ul class="no-margin-top">
+                <li>Single mother of 2</li>
+                <li>Has a career</li>
+                <li>Knows how to cook</li>
+                <li>Wants convenience in...</li>
+                <ul>
+                    <li>Getting recipes</li>
+                    <li>Getting ingredients</li>
+                </ul>
+            </ul>
+            <p>
+                Martha is a single mother of 2. She wants a quick and easy way to turn recipes into a grocery
+                list. Instead of spending a long time browsing for a recipe online, Martha wants a bunch of
+                recipes ready for her to choose from. She wants to save the recipes that her and her children
+                liked. However, she wants to be able to edit the grocery list once she selects on a saved or
+                liked recipe, since the ingredients she has at home might differ from the previous time she went
+                grocery shopping for the same recipe. Martha typically decides what to cook for dinner
+                while on her lunch break at work. The grocery store is on her way home from work, so she wants
+                to be able to order her groceries during lunch and then pick it up after she is done work.
+                She usually makes dinner after she drops her kids off at their after school lessons on the same
+                day.
+            </p>
+        </div>
+    </div>
+
+    <div class="columns is-multiline" id="paper-prototyping">
+        <h3 class="column is-12 no-margin-top no-margin-bottom">Paper Prototyping</h3>
+        <p class="column is-12 no-margin-top">
+            We started with 2 paper prototypes to come up with workflow/userflow ideas, and ideate on some
+            potential features.
+        </p>
+
+        <h3 id="brain-storming" class="column is-12">Brain Storming</h3>
+        <div class="columns">
+            <div class="columns is-multiline no-padding">
+                <div class="column is-12">
+                    Of course, before prototyping, there was a bit of brainstorming. We discussed who the users
+                    might
+                    be, the tasks the interface need to accomplish, some potential features, as well as the concepts
+                    and
+                    conceptual models we wanted to incorporate.
+                </div>
+
+                <div class="column is-12" id="brainstorm-image-0">
+                    <a href="#brainstorm0">
+                        <img width="100%" src="images/brainstorm-0.png">
+                    </a>
+                    <br/>
+                    <small>
+                        Fig. 1. Ideation.
+                    </small>
+
+                    <div id="brainstorm0" class="modalWindow">
+                            <span class="exit-span">
+                                <a href="#close">
+                                    <img src="images/brainstorm-0.png">
+                                </a>
+                                    <br>
+                                <a href="#close">close</a>
+                            </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column is-6" id="brainstorm-image-1">
+                <a href="#brainstorm1">
+                    <img width="100%" src="images/brainstorm-1.png">
+                </a>
+                <br/>
+                <small>
+                    Fig. 2. More ideation.
+                </small>
+
+                <div id="brainstorm1" class="modalWindow">
+                        <span class="exit-span">
+                            <a href="#close">
+                                <img src="images/brainstorm-1.png" style="width: 35vmax;">
+                            </a>
+                                <br>
+                            <a href="#close">close</a>
+                        </span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="columns is-multiline">
+        <h3 class="column is-4 no-margin-top" id="paper-prototype-1">Paper Prototype 1 (PP1). Foodify V1.0</h3>
+        <p class="column is-8">
+            For PP1, ideas were discussed between the team and inspiration was taken from existing, notably
+            well laid out (for the most part) apps. The initial ideas were mocked up in Adobe XD for speed and
+            adjustability. The XD mock up also allowed for checking and understanding task flows. The paper
+            prototype went through a bit more revision.
+        </p>
+
+        <div class="column is-4">
+            <a href="#pp1-0">
+                <img width="100%" src="images/pp1-0.png">
+            </a>
+            <br/>
+            <small>
+                Fig. 3. Initial prototype idea w/ focus on main user
+            </small>
+
+            <div id="pp1-0" class="modalWindow">
+                    <span class="exit-span">
+                        <a href="#close">
+                            <img src="images/pp1-0.png" style="width: 35vmax;">
+                        </a>
+                            <br>
+                        <a href="#close">close</a>
+                    </span>
+            </div>
+        </div>
+
+        <div class="column is-4">
+            <a href="#pp1-1">
+                <img width="100%" src="images/pp1-1.png">
+            </a>
+            <br/>
+            <small>
+                Fig. 4. Prototype screens
+            </small>
+
+            <div id="pp1-1" class="modalWindow">
+                    <span class="exit-span">
+                        <a href="#close">
+                            <img src="images/pp1-1.png" style="width: 35vmax;">
+                        </a>
+                            <br>
+                        <a href="#close">close</a>
+                    </span>
+            </div>
+        </div>
+
+        <div class="column is-4">
+            <a href="#pp1-2">
+                <img width="50%" src="images/pp1-2.png">
+            </a>
+            <br/>
+            <small>
+                Fig. 5. More prototype screens
+            </small>
+
+            <div id="pp1-2" class="modalWindow">
+                    <span class="exit-span">
+                        <a href="#close">
+                            <img src="images/pp1-2.png" style="width: 25vmax;">
+                        </a>
+                            <br>
+                        <a href="#close">close</a>
+                    </span>
+            </div>
+        </div>
+    </div>
+    <div class="columns is-multiline">
+        <h3 class="column is-4 no-margin-top" id="paper-prototype-2">Paper Prototype 2 (PP2). Foodify V2.0</h3>
+        <p class="column is-8">
+            The team brainstormed and considered workflows by implementing informal layouts of the interface in
+            Figma. Like the mock up made in XD, the Figma mock up allowed for understanding how users might move
+            from subtask to subtask. The next step was to focus on feature visibility and aesthetic
+            considerations
+            through whiteboarding, allowing for ideas to emerge from the group. The paper prototype was an
+            integration of the Figma prototype and whiteboarded ideas.
+        </p>
+
+        <div class="column is-4">
+            <a href="#pp2-1">
+                <img src="images/pp2-1.png">
+            </a>
+            <br/>
+            <small>
+                Fig. 6. Whiteboard brainstorming w/ focus on user flow and visual placement of features
+            </small>
+
+            <div id="pp2-1" class="modalWindow">
+                    <span class="exit-span">
+                        <a href="#close">
+                            <img src="images/pp2-1.png" style="width: 70vmax;">
+                        </a>
+                            <br>
+                        <a href="#close">close</a>
+                    </span>
+            </div>
+        </div>
+        <div class="column is-4">
+            <a href="#pp2-2">
+                <img src="images/pp2-2.png">
+            </a>
+            <br/>
+            <small>
+                Fig. 7. Paper prototype screens
+            </small>
+
+            <div id="pp2-2" class="modalWindow">
+                    <span class="exit-span">
+                        <a href="#close">
+                            <img src="images/pp2-2.png" style="width: 70vmax;">
+                        </a>
+                            <br>
+                        <a href="#close">close</a>
+                    </span>
+            </div>
+        </div>
+        <div class="column is-4">
+            <a href="#pp2-0">
+                <img src="images/pp2-0.png">
+            </a>
+            <br/>
+            <small>
+                Fig. 8. Lo-fi digital prototype
+            </small>
+
+            <div id="pp2-0" class="modalWindow">
+                    <span class="exit-span">
+                        <a href="#close">
+                            <img src="images/pp2-0.png" style="width: 70vmax;">
+                        </a>
+                            <br>
+                        <a href="#close">close</a>
+                    </span>
+            </div>
+        </div>
+    </div>
+    <div class="columns is-multiline bottombrd">
+        <h3 class="column is-4 no-margin-top">Paper Prototype Findings</h3>
+        <div class="column is-8">
+            <p>
+                After doing cognitive walkthroughs, we evaluated the good and bad of the two paper prototypes as
+                well as approaches.
+            </p>
+            <p>
+                We found that both had an intuitive user flow, going from screen to screen in a sensible way, with
+                menus that made sense. Both had good, uncluttered interfaces. We found that PP2 also had a lot of
+                safety
+                checks to make sure the user hasn't made any mistakes.
+            </p>
+            <p>
+
+                Both PP1 and PP2 had issues which needed to be addressed. We found that PP1 had some issues with
+                signifiers—we found that PP1 had an erroneous signifier in how we used radio buttons instead of
+                checkboxes (an error made on transitioning from idea to paper) and PP2 had a missing signifier on
+                how to use the swipe affordability. PP1 missed out on dietary restrictions — this is likely due to
+                the task
+                example differences (Martha's story made no mention of allergens or dietary restrictions). This
+                immediately stood out to us and showed how important diverse personas can be. With PP2, we found
+                that there were too many nested screens.
+            </p>
+        </div>
+    </div>
+    <div class="columns is-multiline bottombrd">
+        <div class="column is-12" id="hi-fi-prototype">
+            <h2 class="no-margin-top no-margin-bottom">High Fidelity Prototype</h2>
+            <p style="padding-top: 0.25rem; margin-top: 0.75rem">
+                With all the information gathered from our initial paper prototyping, we set out to create a high
+                fidelity prototype in Figma. We decided to limit our scope to what we identified as the key tasks
+                that users would want, and need, to complete using the interface. In short, we wanted at least the
+                following:
+            </p>
+            <ul class="no-margin-top">
+                <li>Browsing existing recipes</li>
+                <li>Creating recipes from external sources</li>
+            </ul>
+
+        </div>
+        <div class="column is-12" id="participant-eval">
+            <h3 class="no-margin-bottom">Participant Evaluation</h3>
+            <p style="padding-top: 0.25rem; margin-top: 0.75rem">
+                We recruited 7 undergraduates to be participants in our user evaluation. They all fit our basic
+                requirements of having some level of expertise with online shopping. We aimed to understand how
+                efficient and understandable the interface was for users. With our prototype, we wanted people to
+                save time, be accounted for in regards to diverse needs and have an enjoyable time while using
+                it. With that in mind, we created and had our participants run through 2 tasks:
+            </p>
+
+            <div class="columns">
+                <div class="column is-6">
+                    <h4 class="no-margin-bottom">Task 1</h4>
+                    <p class="no-margin-top">
+                        Signing up and creating a new profile as a lactose intolerant person, converting a
+                        recipe URL into a grocery list and then changing quantities of the generated grocery list based
+                        on the availability of ingredients already at home.
+                    </p>
+                </div>
+                <div class="column is-6">
+                    <h4 class="no-margin-bottom">Task 2</h4>
+                    <p class="no-margin-top">
+                        Searching for already existing recipes and then filtering the results based on
+                        meal-type, price, and cuisine.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="column is-12" id="review-process">
+            <h3 class="no-margin-bottom">Review Process</h3>
+            <p style="padding-top: 0.25rem; margin-top: 0.75rem">
+                We had our participants go through a mocked up prototype (a very low fidelity one) and using their
+                feedback, made affinity diagram. In doing so, we found some general trends in what we did well, and
+                what needed to be reworked.
+            </p>
+        </div>
+        <div id="findings-analysis">
+            <h3 class="column is-12">Findings and Analysis</h3>
+            <div class="columns is-multiline no-padding">
+                <div class="column is-4">
+                    <a href="#finding-0">
+                        <img width="100%" src="images/findings-analysis-0.png"/>
+                    </a>
+                    <br/>
+                    <small>
+                        Fig. 9.
+                    </small>
+
+                    <div id="finding-0" class="modalWindow">
+                            <span class="exit-span">
+                                <a href="#close">
+                                    <img src="images/findings-analysis-0.png" style="width: 40vmax;">
+                                </a>
+                                    <br>
+                                <a href="#close">close</a>
+                            </span>
+                    </div>
+                </div>
+                <div class="column is-4">
+                    <a href="#finding-1">
+                        <img width="100%" src="images/findings-analysis-1.png"/>
+                    </a>
+                    <br/>
+                    <small>
+                        Fig. 10.
+                    </small>
+
+                    <div id="finding-1" class="modalWindow">
+                            <span class="exit-span">
+                                <a href="#close">
+                                    <img src="images/findings-analysis-1.png" style="width: 40vmax;">
+                                </a>
+                                    <br>
+                                <a href="#close">close</a>
+                            </span>
+                    </div>
+                </div>
+                <div class="column is-4">
+                    <a href="#finding-2">
+                        <img width="100%" src="images/findings-analysis-2.png"/>
+                    </a>
+                    <br/>
+                    <small>
+                        Fig. 11.
+                    </small>
+
+                    <div id="finding-2" class="modalWindow">
+                            <span class="exit-span">
+                                <a href="#close">
+                                    <img src="images/findings-analysis-2.png" style="width: 40vmax;">
+                                </a>
+                                    <br>
+                                <a href="#close">close</a>
+                            </span>
+                    </div>
+                </div>
+                <div class="column is-4">
+                    <a href="#finding-3">
+                        <img width="100%" src="images/findings-analysis-3.png"/>
+                    </a>
+                    <br/>
+                    <small>
+                        Fig. 12.
+                    </small>
+
+                    <div id="finding-3" class="modalWindow">
+                            <span class="exit-span">
+                                <a href="#close">
+                                    <img src="images/findings-analysis-3.png" style="width: 40vmax;">
+                                </a>
+                                    <br>
+                                <a href="#close">close</a>
+                            </span>
+                    </div>
+                </div>
+                <div class="column is-4">
+                    <a href="#finding-4">
+                        <img width="100%" src="images/findings-analysis-4.png"/>
+                    </a>
+                    <br/>
+                    <small>
+                        Fig. 13.
+                    </small>
+
+                    <div id="finding-4" class="modalWindow">
+                            <span class="exit-span">
+                                <a href="#close">
+                                    <img src="images/findings-analysis-4.png" style="width: 40vmax;">
+                                </a>
+                                    <br>
+                                <a href="#close">close</a>
+                            </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column is-12 no-padding" id="conclusions">
+            <div class="columns is-multiline">
+                <h3 class="column is-12 no-margin-bottom">Conclusions</h3>
+                <p class="column is-12" style="padding-top: 0.25rem; margin-top: 0.75rem">
+                    The design successfully met our evaluation goals and user expectations.
+                </p>
+
+                <div class="column is-6 no-padding">
+                    <h4 class="column is-12 no-margin-bottom">Overall Experience Ratings</h4>
+                    <div class="column is-12">
+                        <img width="100%" src="images/conclusion-0.png">
+                    </div>
+                    <p class="column is-6" style="padding-top: 0.25rem; margin-top: 0.75rem">
+                        Average: 4.2/5<br/>
+                        Mode: 5<br/>
+                        Median: 4<br/>
+                    </p>
+                </div>
+
+                <div class="column is-6 no-padding">
+                    <h4 class="column is-12 no-margin-bottom">Overall Efficiency User Ratings</h4>
+                    <div class="column is-12">
+                        <img width="100%" src="images/conclusion-1.png">
+                    </div>
+                    <p class="column is-6" style="padding-top: 0.25rem; margin-top: 0.75rem">
+                        Average: 4.8/5<br/>
+                        Mode: 5<br/>
+                        Median: 5<br/>
+                    </p>
+                </div>
+
+                <div class="column is-6 no-padding">
+                    <h4 class="column is-12 no-margin-bottom">Grocery List Subtask User Flow Efficiency</h4>
+                    <div class="column is-12">
+                        <img width="100%" src="images/conclusion-2.png">
+                    </div>
+                    <p class="column is-6" style="padding-top: 0.25rem; margin-top: 0.75rem">
+                        Average: 3.6/5<br/>
+                        Mode: 4<br/>
+                        Median: 4<br/>
+                    </p>
+                </div>
+
+                <div class="column is-6 no-padding">
+                    <h4 class="column is-12 no-margin-bottom">Task 1 Time</h4>
+                    <div class="column is-12">
+                        <img width="100%" src="images/conclusion-3.png">
+                    </div>
+                    <p class="column is-6" style="padding-top: 0.25rem; margin-top: 0.75rem">
+                        Average: 2:46 Minutes
+                    </p>
+                </div>
+
+                <div class="column is-6 no-padding">
+                    <h4 class="column is-12 no-margin-bottom">Task 2 Time</h4>
+                    <div class="column is-12">
+                        <img width="100%" src="images/conclusion-4.png">
+                    </div>
+                    <p class="column is-6" style="padding-top: 0.25rem; margin-top: 0.75rem">
+                        Average: 44 Seconds
+                    </p>
+                </div>
+
+                <h4 class="column is-12 no-margin-bottom">Evaluation Findings</h4>
+                <p class="column is-12">
+                    From our evaluation, we noted that:<br/>
+                    + The general workflow/user-flow made sense to our participants. <br/>
+                    - There are problems with how the ingredients list and checkout page were laid out. There were areas
+                    that more intuitive signifiers could have been added for users to more efficiently update/remove
+                    items from their ingredient lists.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="columns is-multiline bottombrd">
+        <div class="column is-12" id="challenges-lessons">
+            <h3 class="no-margin-top no-margin-bottom">Challenges, Lessons Learned</h3>
+            <p>
+                Throughout this project, I learned a lot about HCI.
+            </p>
+            <p>
+                By following a pre-design ⇒ early-design ⇒ mid-design ⇒ late-design development pattern, I learned a
+                lot about going from concept to prototype and the overall process of creating a usable design.
+            </p>
+            <p>
+                Over the course of the project, I learned a lot about the importance of re-iteration informed by
+                feedback (evaluations, heuristic evaluation, cognitive walkthroughs, etc.) in user-centered design.
+                Going through feedback and evaluation results as a team helped us aspects of our interface that we
+                may not have thought about had we not iterated on the design through task based walkthroughs and
+                participant evaluations.
+            </p>
+            <p>
+                This project was a great case study in putting theory to practice, and learning the tools.
+            </p>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>

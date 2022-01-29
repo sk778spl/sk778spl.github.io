@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="a portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <title>sk / avotecado</title>
+</head>
+
+<body class="container" style="padding-bottom: 3rem;">
+<nav>
+    <h5 class="column is-12 no-margin-top no-margin-bottom"><a href="../../index.html">MAIN</a> / <a
+            href="../index.html">PROJECTS</a> / Avotecado</h5>
+</nav>
+<div class="columns is-multiline">
+    <h1 class="column is-12 no-margin-top no-margin-bottom">Avotecado</h1>
+    <h2 class="column is-12 no-margin-top">CPSC 436I (2019)</h2>
+</div>
+<div class="columns is-multiline">
+    <div class="column is-12" style="text-align: center;">
+        <a href="#header">
+            <img src="images/header.png" aria-label="avotecado example image" style="width: 50vmax"
+                 alt="An example image of the avotecado politician page">
+        </a>
+
+        <div id="header" class="modalWindow">
+                <span class="exit-span">
+                    <a href="#close">
+                        <img src="images/header.png" style="width: 75vmax">
+                    </a>
+                    <br/>
+                    <a href="#close">close</a>
+                </span>
+        </div>
+    </div>
+    <div class="column is-8 no-padding">
+        <h3 class="column is-12 no-margin-bottom">Summary</h3>
+        <p id="summary" class="column is-12 no-margin-top">
+            Avotecado is a webapp made to deal with municipal political data (votes, politicians, etc.) so
+            regular folk like myself can read it. It is a full stack app based on Meteor.js, with a
+            React front end.
+        </p>
+    </div>
+    <div class="column is-4 is-multiline no-padding">
+        <h3 class="column no-margin-bottom is-12">Links</h3>
+        <h5 id="source" class="column is-12 no-margin-top">
+            <a href="https://github.com/0x73006b/avotecado">source</a>
+            <div class="unavailable">Currently not deployed.</div>
+        </h5>
+    </div>
+
+    <div tabindex="0" class="columns is-multiline no-padding">
+        <h3 class="column is-8 no-margin-bottom">My Roles</h3>
+        <h3 class="column is-4 no-margin-bottom">Tools</h3>
+        <p id="my-role" class="column is-8 no-margin-top no-padding-top">
+            Lead Programmer, Prototyping, Team Manager.
+            <br/>
+            I wore many hats during this project. Initially, I started as a the programmer, and as time went
+            on, I also became the team manager. As with any team-based project, there was a need for someone
+            to manage the team, i.e. assign tasks in an efficient manner, make certain decisions, etc.
+            I tried to do so in a way that was considerate of people's lives outside of the project.
+        </p>
+        <ul class="column is-4 no-margin-top">
+            React.js,
+            Redux,
+            MongoDB,
+            Express,
+            Meteor.js,
+            Heroku,
+            Extensively used libraries: Material-UI, ReCharts
+        </ul>
+    </div>
+</div>
+
+<div id="long-form-content" class="columns is-multiline">
+    <h2 id="long-form-header" class="column is-12 bottombrd">Long Form Explanation</h2>
+
+    <div class="columns bottombrd">
+        <h3 class="column is-4 no-margin-top no-padding-top">Background, Context</h3>
+        <div class="column is-8 no-padding-top">
+            <p class="no-margin-top">
+                Avotecado is a web application that helps people keep track of municipal politics. Using
+                Avotecado’s political aggregation toolkit, users can follow elected officials, track how they vote
+                on issues, and uncover voting patterns that can get lost in the daily news cycle. Avotecado's goal
+                is to foster engagement beyond election cycles by making political data accessible, easy to
+                understand.
+            </p>
+            <p>
+                We chose municipal politics for 2 reasons:
+            <ol>
+                <li>
+                    High degree of apathy; Municipal politics has some of the lowest
+                    percentages of political participation (vs. provincial or federal).
+                </li>
+                <li>
+                    Party Discipline; The parliamentary form of provincial and federal politics leads to
+                    politicians almost always voting along party lines. Municipal politics offers an
+                    opportunity to see what types of issues cause politicians to vote against party lines.
+                </li>
+            </ol>
+            </p>
+        </div>
+    </div>
+
+    <div id="goals" class="columns bottombrd">
+        <h3 class="column is-4 no-margin-top">Goals of Avotecado</h3>
+        <div class="column is-8">
+            <p class="no-margin-top">
+                One goal was based in technology. This project was a process in learning to
+                build a web app. We set out to learn relevant web technologies while making a prototype of something
+                we felt could be useful.
+            </p>
+            <p>
+                The other goal was based in accessibility of knowledge. We wanted to try to make something that
+                would help people understand local politics and be able to participate/be involved, even if only
+                tangientally through being informed.
+            </p>
+            <p>
+                Tracking politicians is difficult once they get elected. Elected officials often do and say things
+                that are not the same, and we want to help users track the day-to-day decisions politicians make and
+                provide tools that allow users to see patterns in voting behaviour (if and when they exist).
+            </p>
+            <p>
+                Legislation/Votes are also difficult to track. It is difficult to parse through the legal language
+                that comes with legislation and their pathways to becoming law are difficult to follow. We wanted to
+                present these items to average voters in ways that are easily understood, both qualitatively and
+                quantitatively.
+            </p>
+        </div>
+    </div>
+
+    <div id="design-process" class="columns is-multiline bottombrd">
+        <h3 class="column is-4 no-margin-top"> Design Process </h3>
+        <div class="column is-8">
+            <p class="no-margin-top">
+                We took a problem-solving approach to this project. As previouly noted, in municipal politics, it is
+                difficult to follow politicians/legislation and there is a higher degree of apathy.
+                With that in mind, we set out to design a solution to fix this.
+            </p>
+            <div class="columns">
+                <div class="column is-6 no-padding">
+                    <p>
+                        Throughout the initial ideation of avotecado, we initially came up with some feature and
+                        user flow
+                        ideas (Figure 1). We practiced an agile based design-iterate methodology. We would come up
+                        with some
+                        ideas, run them by each other, talk through it, and then discard/evolve the idea.
+                    </p>
+                    <p>
+                        The various rough sketches pictured below were just quick run throughs of what could have
+                        been,
+                        and represent things we would try expand on.
+                    </p>
+                </div>
+                <div class="column is-6">
+                    <a href="#img1">
+                        <img width="100%" src="images/1.png"/>
+                    </a>
+
+                    <div id="img1" class="modalWindow">
+                            <span class="exit-span">
+                                <img src="images/1.png">
+                                <p>
+                                    Fig. 1. User flow diagram we made to help us design overall
+                                    functionality/interactivity of the app, and think through conceptual models, as well
+                                    as the data we might need.
+                                </p>
+                                <a href="#close">close</a>
+                            </span>
+                    </div>
+
+                    <br/>
+                    <small style="display: flex; max-width: 85%;">
+                        Fig. 1. User flow diagram we made to help us design overall functionality/interactivity of
+                        the
+                        app,
+                        and think through conceptual models, as well as the data we might need.
+                    </small>
+                </div>
+            </div>
+            <p>
+            <div class="columns no-margin-bottom" style="padding-top: 1rem">
+                    <span class="column is-6 no-padding">
+                        <a href="#img2">
+                            <img width='100%' src="images/2.png"/>
+                        </a>
+                        <br/>
+                        <small>
+                            Fig. 2.
+                        </small>
+
+                        <div id="img2" class="modalWindow">
+                            <span class="exit-span">
+                                <img src="images/2.png" style="width: 75vw;">
+                                <br/>
+                                <a href="#close">close</a>
+                            </span>
+                        </div>
+                    </span>
+
+                <span class="column is-6 no-padding">
+                        <span class="column is-12" style="padding-top: 0;">
+                            <a href="#img3">
+                                <img width='100%' src="images/3.png"/>
+                            </a>
+                            <br/>
+                            <small>
+                                Fig. 3.
+                            </small>
+
+                            <div id="img3" class="modalWindow">
+                                <span class="exit-span">
+                                    <img src="images/3.png">
+                                    <br/>
+                                    <a href="#close">close</a>
+                                </span>
+                            </div>
+                        </span>
+
+                        <span class="column is-12">
+                            <a href="#img4">
+                                <img width='100%' src="images/4.png"/>
+                            </a>
+                            <br/>
+                            <small>
+                                Fig. 4.
+                            </small>
+
+                            <div id="img4" class="modalWindow">
+                                <span class="exit-span">
+                                    <img src="images/4.png">
+                                    <br/>
+                                    <a href="#close">close</a>
+                                </span>
+                            </div>
+                        </span>
+                    </span>
+            </div>
+            </p>
+            <p>
+                Figures 2, 3 and 4 show the initial idea we had for the homepage. We wanted to have a landing page
+                that asks the user for their location and then proceeds into a selection page (Fig. 5). The
+                selection page would either be the most recent city votes, a politician selection page, or a party
+                selection page. The default 'home' would have been settable by the user. This idea was scrapped due
+                to
+                time-constraints, we ended up focusing on Vancouver.
+            </p>
+            <p>
+
+            </p>
+            <p>
+                We wanted to keep the UI consistent through both mobile and desktop.
+            </p>
+            <p>
+                We discussed alternate ideas as a team and settled on something a bit different than the proposed
+                sketches.
+                We drilled down on the actual required functionality and deemed features like the city picker as
+                unnecessary for the minimum viable product.
+            </p>
+        </div>
+
+        <span class="column is-4">
+                <a href="#img5">
+                    <img width='100%' src="images/5.png"/>
+                </a>
+                <br/>
+                <small>
+                    Fig. 5
+                </small>
+
+                <div id="img5" class="modalWindow">
+                    <span class="exit-span">
+                        <img src="images/5.png" style="height: 75vh">
+                        <br/>
+                        <a href="#close">close</a>
+                    </span>
+                </div>
+            </span>
+
+        <span class="column is-4">
+                <a href="#img6">
+                    <img width='100%' src="images/6.png"/>
+                </a>
+                <br/>
+                <small>
+                    Fig. 6
+                </small>
+
+                <div id="img6" class="modalWindow">
+                    <span class="exit-span">
+                        <img src="images/6.png">
+                        <br/>
+                        <a href="#close">close</a>
+                    </span>
+                </div>
+            </span>
+
+        <span class="column is-4">
+                <a href="#img7">
+                    <img width='100%' src="images/7.png"/>
+                </a>
+                <br/>
+                <small>
+                    Fig. 7
+                </small>
+
+                <div id="img7" class="modalWindow">
+                    <span class="exit-span">
+                        <img src="images/7.png" style="height: 75vh">
+                        <br/>
+                        <a href="#close">close</a>
+                    </span>
+                </div>
+            </span>
+    </div>
+
+    <div class="columns bottombrd">
+        <h3 class="column is-4 no-margin-top">Results</h3>
+        <div class="column is-8">
+            <p class="no-margin-top">
+                We were able to create an app that allows users to track municipal politicians and built a
+                searchable record of all the votes the recently elected Vancouver City council made since November
+                2018 - with some added features (user profiles, voting records organized by party for instance).
+            </p>
+            <p>
+                The project established a useful base that can be expanded upon. We implemented functionality
+                that addressed the problems in the <a href="#goals">goals section</a> at a foundational level,
+                but numbers and visualization are only part of the whole picture. There is a deeper level of
+                analysis required.
+            </p>
+            <p>
+                Generating the political analysis from the data we aggregated turned out to be a significantly more
+                complex problem than we would have been able to tackle with 1. our skill-set at the time, and 2. the
+                amount of time we had.
+            </p>
+        </div>
+    </div>
+
+    <div class="columns bottombrd">
+        <h3 class="column is-4 no-margin-top">Challenges, Lessons Learned</h3>
+        <div class="column is-8">
+            <p class="no-margin-top">
+                I dealt with quite a few challenges during this project.
+            </p>
+
+            <ol>
+                <li>
+                    Our iterate-test-reiterate process was a difficult but rewarding experience; it cemented the
+                    need for throw-away prototypes.
+                </li>
+                <li>
+                    As project manager, I had to deal with unforseeable real life issues that popped up and pivot
+                    accordingly. I had to work around
+                    a personal issue that prevented a larger time commitment from one member. The way I did this was
+                    to
+                    give that member tasks they
+                    were super comfortable with and knew they could get done quickly for the initial data gathering
+                    phase of the project.
+                </li>
+            </ol>
+
+            <p>
+                Many lessons were learned while doing this project.
+            </p>
+            <ol>
+                <li>
+                    The number one lesson was to temper expectations. We wanted to do *too* much with too little
+                    time,
+                    ability, and data.
+                </li>
+            </ol>
+        </div>
+    </div>
+</body>
+
+</html>
