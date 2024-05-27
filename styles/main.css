@@ -1,8 +1,8 @@
-@import url("name.css");
-@import url("grid.css");
+@import url("columns.css");
 @import url("modal.css");
 @import url("font.css");
 @import url("video.css");
+@import url("https://fonts.googleapis.com/css2?family=Arimo&display=swap");
 
 *,
 *:after,
