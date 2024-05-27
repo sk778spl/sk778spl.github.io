@@ -13,9 +13,8 @@ body {
     letter-spacing: .01em;
     line-height: 1.6;
     overflow-y: scroll;
+    overflow-x: hidden;
 }
-
-.ovrx {overflow-x: hidden;}
 
 nav {
     position: sticky;
@@ -76,11 +75,17 @@ img { max-width: 100%; }
 
 #about {
     flex-flow: column;
-    font-size: calc(min(5rem, 7vw));
-    line-height: calc(min(5rem, 7vw));
+    font-size: calc(min(3rem, 5vw));
+    line-height: calc(min(3rem, 5vw));
+    h1 {
+        font-size: calc(min(5rem, 7vw));
+        line-height: calc(min(5rem, 7vw));
+        margin: 0;
+        padding: 0;
+    }
 }
 
-#about, #links {padding-bottom: calc(max(50px, 5vmin));}
+#links {padding-bottom: calc(max(50px, 5vmin));}
 
 p { margin: 0.75rem 0; }
 
@@ -90,6 +95,7 @@ h1, h2, h3, h4, h5 {
     padding: 0;
 }
 
+.medium-link { font-size: calc(min(3rem, 5vw)); line-height: calc(min(3.5rem, 5.5vw)); }
 .large-link { font-size: calc(min(5rem, 7vw)); line-height: calc(min(5.5rem, 7.5vw)); }
 
 h1 { font-size: 5rem;   }
@@ -100,15 +106,16 @@ h5 { font-size: 2rem;   }
 h5 { margin-bottom: 0;  }
 h6 { margin-top: 0.5rem;}
 
-#projects h1 {
-    margin-top: 1vh;
-    margin-bottom: 1vh;
+#projects h1, #links h1 {
+    margin-top:  calc(min(3rem, 2vh));
+    margin-bottom: 1rem;
 }
 
 br .mobile-only { display: none; }
 
 .email-text-transform { transform: rotateZ(0deg); transform-origin: left;}
-@media screen and (max-width: 1220px) {.email-text-transform { transform: rotateZ(23deg);} }
+@media screen and (max-width: 1220px) {.email-text-transform { transform: rotateZ(20deg);} }
+@media screen and (max-width: 1200px) {.email-text-transform { transform: rotateZ(25deg);} }
 @media screen and (max-width: 1190px) {.email-text-transform { transform: rotateZ(33deg);} }
 @media screen and (max-width: 1160px) {.email-text-transform { transform: rotateZ(37deg);} }
 @media screen and (max-width: 1140px) {.email-text-transform { transform: rotateZ(40deg);} }
