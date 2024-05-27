@@ -1,12 +1,12 @@
 .name {
-    width: fit-content;
-    transition: transform 0.1s;
-    display: inline-flex;
-    text-decoration: underline wavy;
-    text-decoration-thickness: 2px;
+  width: fit-content;
+  transition: transform 0.1s;
+  display: inline-flex;
+  text-decoration: underline wavy;
+  text-decoration-thickness: 2px;
 }
 
 .name:hover {
-    background: red;
-    transform: scale3d(0.01, 0.5, 0.5) rotateZ(1000deg);
+  background: red;
+  transform: scale3d(0.01, 0.5, 0.5) rotateZ(1000deg);
 }

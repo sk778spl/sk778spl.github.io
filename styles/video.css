@@ -1,14 +1,14 @@
 .video-div {
-    padding: 0;
-    width: fit-content;
-    margin-top: 2rem;
+  padding: 0;
+  width: fit-content;
+  margin-top: 2rem;
 }
 
 .video-div small {
-    display: block;
-    width: 95%;
+  display: block;
+  width: 95%;
 }
 
 .video-div video {
-    width: 95%;
+  width: 95%;
 }
